@@ -36,5 +36,17 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "description": "## Project setup ``` yarn install ```",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevHumbleChris/montana-foods.git"
+  },
+  "author": "Am.ChrisKE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevHumbleChris/montana-foods/issues"
+  },
+  "homepage": "https://github.com/DevHumbleChris/montana-foods#readme"
 }
