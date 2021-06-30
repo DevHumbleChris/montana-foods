@@ -35,7 +35,7 @@ export default {
 
 <style lang="scss">
 .Meals {
-  height: 300px;
+  height: 312px;
   background: yellow;
 
   .menu-title {
