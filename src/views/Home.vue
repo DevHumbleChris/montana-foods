@@ -3,6 +3,7 @@
     <HelloWorld/>
     <Meals/>
     <Categories/>
+    <CookingTrailers/>
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import Meals from '@/components/Meals.vue'
 import Categories from '@/components/Categories.vue'
+import CookingTrailers from '@/components/CookingTrailers.vue'
 
 export default {
   name: 'Home',
   components: {
     HelloWorld,
     Meals,
-    Categories
+    Categories,
+    CookingTrailers
   }
 }
 </script>

@@ -22,5 +22,19 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 #app {
   font-family: 'Source Sans Pro', sans-serif;
+
+  .menu-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    .flexContainer::-webkit-scrollbar {
+        display: none;
+    }
+    .flexContainer{
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+  }
 }
 </style>

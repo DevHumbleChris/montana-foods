@@ -38,22 +38,9 @@ export default {
   height: 312px;
   background: yellow;
 
-  .menu-title {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-  }
   .meal-img {
     width: 12rem;
     height: 12rem;
-  }
-  @media screen and (max-width: 480px) {
-    .flexContainer::-webkit-scrollbar {
-        display: none;
-    }
-    .flexContainer{
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
-    }
   }
 }
 </style>
