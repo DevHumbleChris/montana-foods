@@ -8,13 +8,16 @@ const getCookingTutorials = async () => {
 
   const { idMeal, strMeal, strCategory, strArea, strMealThumb, strYoutube } = responseData.meals[0]
 
+  const youTubeKey = strYoutube.split('=')
+
   const meal = {
     idMeal,
     strMeal,
     strCategory,
     strArea,
     strMealThumb,
-    strYoutube
+    strYoutube,
+    youTubeKey: youTubeKey[1]
   }
 
   cookingTutorials.push(meal)

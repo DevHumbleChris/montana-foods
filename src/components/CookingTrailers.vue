@@ -9,7 +9,9 @@
         <div class="img-wrapper">
           <img :src="meal.strMealThumb" class="rounded">
         </div>
-        <font-awesome-icon :icon="['fab', 'youtube']" class="absolute playButton text-red-500"/>
+        <button>
+          <font-awesome-icon :icon="['fab', 'youtube']" class="absolute playButton text-red-500"/>
+        </button>
         <div class="p-3 text-center">
           <div>
             {{ meal.strMeal }}
