@@ -1,5 +1,5 @@
 <template>
-  <div class="CookingTrailers text-white">
+  <div class="CookingTrailers text-white relative">
     <div class="p-3 menu-title">
       Random Cooking YouTube
       <span class="text-red-600">Tutorials</span>.
@@ -9,10 +9,10 @@
         <div class="img-wrapper">
           <img :src="meal.strMealThumb" class="rounded">
         </div>
-        <button>
+        <button @click="getVideoId(meal.youTubeKey)">
           <font-awesome-icon :icon="['fab', 'youtube']" class="absolute playButton text-red-500"/>
         </button>
-        <div class="p-3 text-center">
+        <div class="p-1 text-center text-sm">
           <div>
             {{ meal.strMeal }}
           </div>
@@ -22,16 +22,23 @@
         </div>
       </div>
     </div>
+    <YouTube class="absolute youTubeIframe" :YouTubeKeyId="YouTubeKeyId" :videoPlay="videoPlay"/>
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
+import YouTube from '@/components/YouTube.vue'
 
 export default {
   name: 'CookingTrailers',
+  components: {
+    YouTube
+  },
   data () {
     return {
+      videoPlay: false,
+      YouTubeKeyId: ''
     }
   },
   computed: {
@@ -41,6 +48,13 @@ export default {
     meals () {
       const meal = this.cookingTutorials
       return meal
+    }
+  },
+  methods: {
+    getVideoId (videoID) {
+      this.YouTubeKeyId = videoID
+      this.videoPlay = true
+      alert(`${this.YouTubeKeyId} ${this.videoPlay}`)
     }
   }
 }
@@ -65,5 +79,9 @@ export default {
   height: 15rem;
   object-fit: cover;
   filter: grayscale(50%);
+}
+.youTubeIframe {
+  top: -20px;
+  right: 50px;
 }
 </style>

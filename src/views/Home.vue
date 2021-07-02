@@ -4,7 +4,6 @@
     <Meals/>
     <Categories/>
     <CookingTrailers/>
-    <YouTube/>
   </div>
 </template>
 
@@ -14,7 +13,6 @@ import HelloWorld from '@/components/HelloWorld.vue'
 import Meals from '@/components/Meals.vue'
 import Categories from '@/components/Categories.vue'
 import CookingTrailers from '@/components/CookingTrailers.vue'
-import YouTube from '@/components/YouTube.vue'
 
 export default {
   name: 'Home',
@@ -22,8 +20,7 @@ export default {
     HelloWorld,
     Meals,
     Categories,
-    CookingTrailers,
-    YouTube
+    CookingTrailers
   }
 }
 </script>
